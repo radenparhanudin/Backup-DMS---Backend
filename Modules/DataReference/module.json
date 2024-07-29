@@ -1,0 +1,11 @@
+{
+    "name": "DataReference",
+    "alias": "datareference",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DataReference\\App\\Providers\\DataReferenceServiceProvider"
+    ],
+    "files": []
+}

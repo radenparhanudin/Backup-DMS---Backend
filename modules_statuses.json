@@ -1,0 +1,7 @@
+{
+    "Authentication": true,
+    "Document": true,
+    "User": true,
+    "Administrator": true,
+    "DataReference": true
+}

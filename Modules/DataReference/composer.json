@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/datareference",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\DataReference\\": "",
+            "Modules\\DataReference\\App\\": "app/",
+            "Modules\\DataReference\\Database\\Factories\\": "database/factories/",
+            "Modules\\DataReference\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\DataReference\\Tests\\": "tests/"
+        }
+    }
+}
