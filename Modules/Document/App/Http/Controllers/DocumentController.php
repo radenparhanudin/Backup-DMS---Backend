@@ -126,7 +126,7 @@ class DocumentController extends Controller
 
     public function syncFile(SyncFileRequest $request): JsonResponse
     {
-        $documents = Document::whereDownloadedFile(0)->limit($request->limit)->get();
+        $documents = Document::whereDownloadedFile(0)->limit($request->limit)->orderBy('tanggal_update', 'asc')->get();
 
         foreach ($documents as $document) {
             $file_response = DMS::get(
@@ -160,7 +160,7 @@ class DocumentController extends Controller
     {
         $document = Document::findOrFail($document_id);
         $path = $document->path;
-        if (! Storage::exists($path)) {
+        if (!Storage::exists($path)) {
             return ResponseJson::error(
                 message: 'File tidak ditemukan kemungkinan terhapus!'
             );

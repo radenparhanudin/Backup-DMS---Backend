@@ -17,7 +17,7 @@ class Document extends BaseModelUuid
     {
         parent::boot();
         static::addGlobalScope('order', function ($query) {
-            $query->orderBy('updated_at', 'desc');
+            $query->orderBy('tanggal_update', 'desc');
         });
     }
 
